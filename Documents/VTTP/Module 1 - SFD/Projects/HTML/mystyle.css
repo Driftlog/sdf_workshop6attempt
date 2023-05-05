@@ -1,0 +1,12 @@
+h1 {
+    color: red;
+    font-size: 3cm;
+    /* colour, third is gaussian blurring
+
+    */
+}
+
+p {
+    font-family: monospace;
+    font-size: 1.5em;
+}
