@@ -1,12 +1,39 @@
-h1 {
+/* class, selectively apply while selector is applied to all
+*/
+.h1-style{
     color: red;
     font-size: 3cm;
+    background-color: light-grey;
+    text-shadow: grey;
+    padding: 15px;
     /* colour, third is gaussian blurring
-
     */
 }
+
 
 p {
     font-family: monospace;
     font-size: 1.5em;
+    border: 1px dashed;
+    border-radius: 8px;
+    padding: 18px;
+
+    /* Space between two elements is margin
+    margin, border and padding 
+    */
+}
+
+#special {
+    font-style: italic;
+}
+
+li {
+    display: inline;
+}
+
+/* li is typically a block element
+*/
+
+.box-it {
+    
 }
