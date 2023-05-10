@@ -10,7 +10,7 @@ import java.net.Socket;
 
 public class CookieClient {
     public static void main( String[] args ) throws Exception
-    {cd 
+    {
         int portNo = Integer.parseInt(args[0]);
         Socket sock = new Socket("localhost", portNo);
 
