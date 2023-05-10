@@ -23,9 +23,11 @@ public class CookieClient {
 
             String input = "";
             while (!input.equals("close")) {
+                //Entering command on console
                 Console console = System.console();
                 input = console.readLine("Enter command: ");
                 
+                //If command is "get-cookie", send a cookie
                 if (input.toLowerCase().trim().equals("get-cookie")) {
                     dos.writeUTF("get-cookie");
                     dos.flush();

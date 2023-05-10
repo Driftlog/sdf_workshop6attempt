@@ -31,6 +31,7 @@ public class CookieClientHandler implements Runnable {
             while (!input.equals("close")) {
                 input = dis.readUTF();
 
+                //Write the cookie and send
                 if (input.trim().toLowerCase().equals("get-cookie")) {
                     dos.writeUTF("cookie-text");
                     dos.writeUTF(cookie.getCookie());

@@ -20,19 +20,22 @@ public class ServerMain {
         ExecutorService thrPool = Executors.newFixedThreadPool(3);
         Socket sock = socket.accept();
         System.out.println("Connection Established");
-        List<Future<Void>> futures = new ArrayList<>();
+        
+        //List<Future<Void>> futures = new ArrayList<>();
 
+        //Running the task via threadPool
         Future<Void> result = thrPool.submit(new CookieClientHandler(sock), null);
         Future<Void> result2 = thrPool.submit(new CookieClientHandler(sock), null);
         Future<Void> result3 = thrPool.submit(new CookieClientHandler(sock), null);
 
+        /* 
         futures.add(result);
         futures.add(result2);
         futures.add(result3);
         
         for (Future<Void> future : futures) {
             future.get();
-        }
+        } */
         /* if(result.get() && result2.get() && result3.get())
         {
             thrPool.shutdown();
